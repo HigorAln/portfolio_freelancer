@@ -10,6 +10,12 @@ export const ContentCardServices = styled.nav<IContentCardServices>`
   width:100%;
   height:100%;
   padding: 20px 20px;
+  transform:scale(0.9);
+  transition: all 0.2s ;
+
+  &:hover {
+    transform: scale(1) ;
+  }
 
   display: flex;
   align-items:center;

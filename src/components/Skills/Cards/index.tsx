@@ -9,12 +9,12 @@ interface CardsProps {
 
 export function Cards({ title, description, skills, isActive }: CardsProps) {
 	return (
-		<ContentCards isActive={isActive}>
-			<p>{description}</p>
-			<p>
-				{skills.map((skill, index) => `${index !== 0 ? '- ' : ''}${skill}`)}
-			</p>
-			<h1>{title}</h1>
-		</ContentCards>
+      <ContentCards isActive={isActive}>
+        <p>{description}</p>
+        <p>
+          {skills.map((skill, index) => `${index !== 0 ? '- ' : ''}${skill}`)}
+        </p>
+        <h1>{title}</h1>
+      </ContentCards>
 	);
 }

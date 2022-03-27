@@ -6,6 +6,7 @@ export const ContentServices = styled.div`
   display:flex;
   width:100%;
   justify-content: center;
+  user-select: none;
 `
 
 export const Content = styled.div`
@@ -13,6 +14,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction:column;
   align-items:center;
+  
 
   > h1{
     align-self: flex-start ;

@@ -7,7 +7,8 @@ export const ContentContact = styled.div`
   padding:0px 100px;
   justify-content:center;
   padding-bottom:100px;
-  padding-top: 200px;
+  padding-top: 100px;
+  margin-top:100px
 
   div{
     display:flex;
@@ -34,7 +35,14 @@ export const ContentContact = styled.div`
       a{
         color: currentColor;
         font-size: 28px;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover{
+          color: var(--pink);
+        }
       }
+
     }
   }
 

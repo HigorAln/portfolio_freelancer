@@ -1,18 +1,23 @@
 import { servicesOfferVariables } from "../../services/servicesOffer";
+import { Fade } from "../../utils/Animate/Fade";
 import { CardServices } from "./CardServices";
 import { Content, ContentServices } from "./styles";
 
 
 export function ServicesOffer(){
   return(
-    <ContentServices>
+    <ContentServices id="servicesOffer">
       <Content>
-        <h1>The services i offer:</h1>
+        <Fade>
+          <h1>The services i offer:</h1>
+        </Fade>
 
         <span>
           {servicesOfferVariables.map((service, index) => {
             return(
-              <CardServices data={service} key={service.id}/>
+              <Fade right delay={index * 300} key={service.id}>
+                <CardServices data={service} />
+              </Fade>
             )
           })}
         </span>

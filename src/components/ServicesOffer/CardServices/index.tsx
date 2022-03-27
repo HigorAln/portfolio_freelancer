@@ -12,7 +12,6 @@ interface ICardServices {
 }
 
 export function CardServices({data}: ICardServices){
-  console.log(data.Icon)
   return(
     <ContentCardServices active={data.active}>
 
