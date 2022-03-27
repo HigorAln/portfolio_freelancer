@@ -32,7 +32,7 @@ export const ContentContact = styled.div`
       gap: 20px;
       margin-top:15px;
 
-      a{
+      a, button{
         color: currentColor;
         font-size: 28px;
         transition: all .2s;
@@ -41,6 +41,12 @@ export const ContentContact = styled.div`
         &:hover{
           color: var(--pink);
         }
+      }
+
+      button {
+        background-color: transparent;
+        height: 30px;
+        border:0;
       }
 
     }
@@ -63,7 +69,6 @@ export const ContentContact = styled.div`
       form{
         display:flex;
         flex-direction:column;
-        gap:15px;
         width:600px;
 
         input, textarea{
@@ -75,6 +80,7 @@ export const ContentContact = styled.div`
           outline:none;
           font-size:18px;
           resize:none ;
+          margin-top:15px;
         }
 
         button {
@@ -87,6 +93,7 @@ export const ContentContact = styled.div`
           width: 300px;
           height: 60px;
           transition: all 0.2s ;
+          margin-top:15px;
 
           &:hover {
             background-color: var(--pink);
@@ -94,6 +101,12 @@ export const ContentContact = styled.div`
           }
         }
 
+
+        p{
+          color: var(--pink);
+          font-size: 0.7rem;
+          margin-top:5px;
+        }
       }
     }
 

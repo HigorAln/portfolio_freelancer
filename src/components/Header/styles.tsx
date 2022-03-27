@@ -14,10 +14,15 @@ export const MainContainerHeader = styled.div`
 	left: 0;
 	z-index: 10;
 
-	h1 {
-		text-align: center;
-		user-select: none;
-	}
+  nav{
+    display:flex;
+    justify-content:center;
+    
+    img {
+      width:135px;
+      align-self:center;
+    }
+  }
 	div {
 		display: flex;
 		justify-content: center;

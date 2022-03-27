@@ -5,13 +5,34 @@ import {FaDiscord} from 'react-icons/fa'
 import { AiFillLinkedin } from "react-icons/ai";
 import { GoMarkGithub } from "react-icons/go";
 import { Fade } from "../../utils/Animate/Fade";
+import ReactTooltip from 'react-tooltip';
+import { useState } from "react";
+import { useForm } from 'react-hook-form'
+import * as yup from 'yup'
+import { yupResolver } from '@hookform/resolvers/yup'
 
-
+const sendMessageSchema = yup.object().shape({
+  email: yup.string().required("E-mail obrigatorio").email("E-mail invalido"),
+  message: yup.string().required("Mensagem obrigatoria").min(25, "Mensagem muito curta"),
+  name: yup.string().required("Nome obrigatorio").min(10, "Nome muito curto"),
+})
 
 export function Contact(){
+  const [copy, setCopy] = useState(false)
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting, errors },
+  } = useForm({
+    resolver: yupResolver(sendMessageSchema)
+  })
+
+  const handleSendMessage = async (data: any) =>{
+    console.log(data)
+  }
+
   return(
     <ContentContact id="contact">
-
       <Fade>
         <div>
           <h1>Connect with me:</h1>
@@ -23,19 +44,22 @@ export function Contact(){
                 <BsTwitter />
               </a>
             </Link>
-            <a>
+            <button data-tip={!copy ? "Click for copy my code" : "Copiado!"} onClick={()=> {
+              navigator.clipboard.writeText("iHigorAllan#8479");
+              setCopy(true)
+            }}>
               <FaDiscord />
-            </a>
+            </button>
             <Link
               href="https://www.linkedin.com/in/higor-allan-a9192b219/"
             >
-              <a>
+              <a target={"_blank"}>
                 <AiFillLinkedin />
               </a>
             </Link>
 
             <Link href="https://github.com/HigorAln">
-              <a>
+              <a target={"_blank"}>
                 <GoMarkGithub />
               </a>
             </Link>
@@ -47,17 +71,20 @@ export function Contact(){
       <Fade>
         <div>
           <span>
-            <form>
+            <form onSubmit={handleSubmit(handleSendMessage)}>
             <h1>{"Contact me, let’s make magic together"}</h1>
-              <input type="text" placeholder="Name" required />
-              <input type="email" placeholder="E-mail" required/>
-              <textarea name="" id="" cols={30} rows={10} maxLength={500} placeholder="Message" required />
-              <button>Send</button>
+              <input type="text" placeholder="Name" {...register("name")}/>
+              {errors.name && <p>{errors.name.message}</p>}
+              <input type="email" placeholder="E-mail" {...register("email")} />
+              {errors.email && <p>{errors.email.message}</p>}
+              <textarea cols={30} rows={10} maxLength={500} placeholder="Message" {...register("message")} />
+              {errors.message && <p>{errors.message.message}</p>}
+              <button disabled={isSubmitting}>{isSubmitting ? "Enviando..." : "Send"}</button>
             </form>
           </span>
         </div>
       </Fade>
-
+      <ReactTooltip place="bottom" />
     </ContentContact>
   )
 }

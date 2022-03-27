@@ -27,9 +27,7 @@ export function Apresentation() {
         </Fade>
 			</Right>
 
-      {/* <Fade> */}
-			  <Image src="/phone.svg" alt="iphone image" />
-      {/* </Fade> */}
+      <Image src="/phone.svg" alt="iphone image" />
 		</ContentApresentation>
 	);
 }

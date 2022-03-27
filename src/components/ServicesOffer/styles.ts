@@ -7,6 +7,7 @@ export const ContentServices = styled.div`
   width:100%;
   justify-content: center;
   user-select: none;
+  overflow-x:hidden;
 `
 
 export const Content = styled.div`

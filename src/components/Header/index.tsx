@@ -7,7 +7,10 @@ import { useRouter } from 'next/router';
 export function Header() {
 	return (
 		<MainContainerHeader>
-			<h1>HA</h1>
+			{/* <h1>HA</h1> */}
+      <nav>
+        <img src="/1.png" alt=""/>
+      </nav>
 
 			<div>
 				<a href="#home">Home</a>
@@ -18,13 +21,17 @@ export function Header() {
 
 			<span>
 				<Link href="https://github.com/HigorAln" passHref>
-					<GoMarkGithub />
+          <a target={"_blank"}>
+					  <GoMarkGithub />
+          </a>
 				</Link>
 				<Link
 					href="https://www.linkedin.com/in/higor-allan-a9192b219/"
 					passHref
 				>
-					<AiFillLinkedin />
+          <a target={"_blank"}>
+					  <AiFillLinkedin />
+          </a>
 				</Link>
 			</span>
 		</MainContainerHeader>
