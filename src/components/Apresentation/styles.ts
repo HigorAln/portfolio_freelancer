@@ -6,6 +6,7 @@ export const ContentApresentation = styled.div`
 	height: 100vh;
 	position: relative;
   margin-bottom:100px;
+  overflow-x:hidden ;
 `;
 
 export const Left = styled.div`
