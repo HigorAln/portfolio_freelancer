@@ -10,6 +10,7 @@ import { Works } from '../components/Works';
 import { WorkVariables } from '../services/work';
 import { Content } from '../styles/home';
 import { useInView } from 'react-intersection-observer'
+import Head from 'next/head';
 
 export default function Home() {
   const { ref, inView } = useInView()
@@ -21,6 +22,10 @@ export default function Home() {
 
 	return (
 		<Content>
+      <Head>
+        <title>My Portfolio</title>
+      </Head>
+    
 			<Header />
 
       <div ref={ref}>

@@ -8,6 +8,7 @@ export const ContentCards = styled.div<ContentCardsProps>`
 	background-color: var(--black);
 	height: 450px;
 	width: 400px;
+  position: relative;
 
 	padding: 20px 20px 20px 30px;
 
@@ -38,4 +39,16 @@ export const ContentCards = styled.div<ContentCardsProps>`
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+  
+  div {
+    position: absolute;
+    top:15px;
+    right:15px;
+
+    border-top: 5px solid var(--purple);
+    border-right: 5px solid var(--purple);
+
+    width: 50px;
+    height: 50px;
+  }
 `;

@@ -32,6 +32,26 @@ export default createGlobalStyle`
   }
   html, body, #root {
     scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+      width: 0.8rem;
+      height: 0.7rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--gray-dark);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--black);
+      border-radius: 100px;
+      cursor: pointer;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--pink);
+      cursor: pointer;
+    }
   }
   html{
     @media (max-width: 1080px){

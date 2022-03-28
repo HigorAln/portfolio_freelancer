@@ -29,6 +29,7 @@ export function Contact(){
 
   const handleSendMessage = async (data: any) =>{
     console.log(data)
+    alert("Ainda estamos fazendo essa implementacao")
   }
 
   return(

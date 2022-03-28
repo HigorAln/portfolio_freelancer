@@ -15,6 +15,10 @@ export function Cards({ title, description, skills, isActive }: CardsProps) {
           {skills.map((skill, index) => `${index !== 0 ? '- ' : ''}${skill}`)}
         </p>
         <h1>{title}</h1>
+
+        {!isActive && (
+          <div />
+        )}
       </ContentCards>
 	);
 }
