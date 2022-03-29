@@ -14,6 +14,16 @@ export const MainContainerHeader = styled.div`
 	left: 0;
 	z-index: 10;
 
+  @media (max-width: 800px){
+    grid-template-columns: 1fr 2fr 1fr ;
+  }
+
+  @media (max-width: 450px){
+    display:flex ;
+    justify-content:space-between ;
+
+  }
+
   nav{
     display:flex;
     justify-content:center;
@@ -27,6 +37,13 @@ export const MainContainerHeader = styled.div`
 		display: flex;
 		justify-content: center;
 		gap: 20px;
+
+    @media (max-width: 800px){
+      visibility:hidden;
+    }
+    @media (max-width: 450px){
+      display:none ;
+    }
 
 		a {
 			font-weight: 500;
@@ -52,5 +69,18 @@ export const MainContainerHeader = styled.div`
 				cursor: pointer;
 			}
 		}
+
+
+    button {
+      display: none;
+      background-color:transparent ;
+      border: 0;
+      height:fit-content;
+      width:fit-content;
+
+      @media (max-width: 800px){
+        display: flex ;
+      }
+    }
 	}
 `;

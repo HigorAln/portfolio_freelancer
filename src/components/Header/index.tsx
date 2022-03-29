@@ -1,10 +1,18 @@
 import { MainContainerHeader } from './styles';
 import { GoMarkGithub } from 'react-icons/go';
-import { AiFillLinkedin } from 'react-icons/ai';
+import { AiFillLinkedin, AiOutlineClose } from 'react-icons/ai';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { HiMenuAlt4 } from 'react-icons/hi'
+import { Dispatch, SetStateAction, useState } from 'react';
+import { ModalHeader } from './ModalHeader';
 
-export function Header() {
+interface IHeader {
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+  isOpen: boolean;
+}
+
+export function Header({setIsOpen, isOpen}: IHeader) {
 	return (
 		<MainContainerHeader>
 			{/* <h1>HA</h1> */}
@@ -33,7 +41,12 @@ export function Header() {
 					  <AiFillLinkedin />
           </a>
 				</Link>
+
+        <button>
+          {!isOpen ? <HiMenuAlt4 onClick={()=> setIsOpen(true)}/> : <AiOutlineClose onClick={()=> setIsOpen(false)}/>}
+        </button>
 			</span>
+
 		</MainContainerHeader>
 	);
 }
