@@ -18,10 +18,11 @@ export const MainContainerHeader = styled.div`
     grid-template-columns: 1fr 2fr 1fr ;
   }
 
-  @media (max-width: 450px){
+  @media (max-width: 550px){
     display:flex ;
-    justify-content:space-between ;
-
+    justify-content:space-between;
+    align-items: center;
+    height:100px;
   }
 
   nav{
@@ -41,7 +42,7 @@ export const MainContainerHeader = styled.div`
     @media (max-width: 800px){
       visibility:hidden;
     }
-    @media (max-width: 450px){
+    @media (max-width: 550px){
       display:none ;
     }
 

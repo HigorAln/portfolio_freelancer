@@ -8,7 +8,19 @@ export const ContentContact = styled.div`
   justify-content:center;
   padding-bottom:100px;
   padding-top: 100px;
-  margin-top:100px
+  margin-top:100px;
+
+  @media (max-width: 1300px){
+    padding: 0 20px
+  }
+  @media (max-width: 1000px){
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top:50px;
+    margin-bottom:100px;
+  }
+  
 
   div{
     display:flex;
@@ -26,6 +38,28 @@ export const ContentContact = styled.div`
     p{
       font-size: 1.3rem;
     }
+
+    @media (max-width: 1100px){
+      h1 {
+        font-size: 1.2rem;
+      }
+      p{
+        font-size: 0.9rem;
+      }
+    }
+    @media (max-width: 1000px){
+      align-self: flex-start;  
+      padding-left: 130px;;
+      margin-bottom:20px;
+      width: 100%;
+    }
+    @media (max-width: 600px){
+      padding-left: 20px;
+    }
+    @media (max-width: 450px){
+      padding-left:0px;
+    }
+
 
     span {
       display:flex;
@@ -55,10 +89,21 @@ export const ContentContact = styled.div`
   div:nth-child(2){
     display: flex;
 
+
+    @media (max-width: 1100px){
+      h1 {
+        font-size:1rem;
+      }
+    }
+
     span{
       display:flex;
       flex-direction:column;
       align-items: flex-end;
+
+      @media (max-width: 1000px){
+        align-items: center;
+      }
 
       h1 {
         font-size: 1.8rem;
@@ -71,10 +116,24 @@ export const ContentContact = styled.div`
         flex-direction:column;
         width:600px;
 
+        @media (max-width: 1000px){
+          width: 100%;
+        }
+        @media (max-width: 570px){
+          width: 400px;
+          button {
+            align-self: center;
+          }
+        }
+        @media (max-width: 420px){
+          width: 100%;
+        }
+
         input, textarea{
           background-color:var(--black);
           border:0;
           padding: 10px;
+          width: 100%;
           border-radius: 10px;
           color: white;
           outline:none;

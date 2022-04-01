@@ -17,6 +17,10 @@ export const ContentCards = styled.div<ContentCardsProps>`
 	justify-content: center;
 	gap: 20px;
 
+  @media (max-width: 530px){
+    width: 350px;
+  }
+
 	p {
 		font-size: 18px;
 		font-weight: 500;
@@ -51,4 +55,19 @@ export const ContentCards = styled.div<ContentCardsProps>`
     width: 30px;
     height: 30px;
   }
+
+
+  @media (max-width: 450px){
+    width: 300px;
+    height: 350px;
+
+    p {
+      font-size:15px
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+
 `;

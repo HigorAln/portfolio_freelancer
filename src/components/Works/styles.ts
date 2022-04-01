@@ -22,6 +22,16 @@ export const ContentWork = styled.div<IContentWork>`
 		height: 600px;
 		width: 70%;
     border-radius:5px ;
+
+    @media (max-width: 1000px){
+      width: 90%;
+    }
+    @media (max-width: 770px){
+      height: 500px
+    }
+    @media (max-width: 550px){
+      height: 350px;
+    }
 	}
 
   > span {
@@ -48,6 +58,28 @@ export const ContentWork = styled.div<IContentWork>`
           height:50px ;
           border-radius:50%;
           background: linear-gradient(to bottom, ${props => props.color} 5%, transparent);
+        }
+      }
+
+      @media (max-width: 770px){
+        top:35%;  
+        text-align: center;
+
+        h1 {
+          font-size:35px;
+          line-height: 35px;
+          margin-bottom:20px;
+        }
+
+      }
+      @media (max-width: 550px){
+        top:25%;
+
+        span {
+          nav {
+            width:40px ;
+            height:40px ;
+          }
         }
       }
 		}
@@ -86,6 +118,24 @@ export const ContentWork = styled.div<IContentWork>`
         p {
           font-size: 13px;
           font-weight:500 ;
+        }
+      }
+
+      @media (max-width: 1000px){
+        bottom:40px;
+      }
+      @media (max-width: 550px){
+        width: 320px;
+        height: 120px;
+
+        div {
+          font-size:12px;
+        }
+
+        span {
+          p{ 
+            font-size:10px;
+          }
         }
       }
     }

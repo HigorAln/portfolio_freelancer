@@ -17,7 +17,7 @@ export const SkillsVariables = [
 		id: 3,
 		title: 'backend',
 		description:
-			"I'm a backend developer with a passion for building scalable and secure systems. I'm currently working on projects with Node.js, Express, and GraphQL.",
+			"I'm a backend developer with a passion for building scalable and secure systems. I'm currently working on projects with Node.js.",
 		skills: ['Node.js', 'Express', 'GraphQL, MongoDB, RestAPI'],
 	},
 ];

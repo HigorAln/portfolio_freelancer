@@ -31,6 +31,18 @@ export const ContentModalHeader = styled.div`
     &:hover {
       color: var(--gray-light);
     }
+
+    @media (max-width: 950px){
+      right: 70px;
+    }
+    @media (max-width: 650px){
+      top: 60px;
+      right: 50px;
+    }
+    @media (max-width: 450px){
+      top: 30px;
+      right: 18px;
+    }
   }
 
   h1, h2 {

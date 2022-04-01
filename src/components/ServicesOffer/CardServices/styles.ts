@@ -35,5 +35,9 @@ export const ContentCardServices = styled.nav<IContentCardServices>`
   p{
     font-weight:500;
   }
-
+  
+  @media (max-width:863px){
+    width: 100%;
+    height: 200px;
+  }
 `
