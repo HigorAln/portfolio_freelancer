@@ -5,8 +5,12 @@ export const ContentApresentation = styled.div`
 	width: 100%;
 	height: 100vh;
 	position: relative;
-  margin-bottom:100px;
-  overflow-x:hidden;
+	margin-bottom: 100px;
+	overflow-x: hidden;
+
+	@media (max-width: 500px) {
+		margin-bottom: 0px;
+	}
 `;
 
 export const Left = styled.div`
@@ -42,79 +46,78 @@ export const Left = styled.div`
 		}
 	}
 
-  @media (max-width:1100px){
-    div {
-      width: 70%;
-    }
-  }
-  @media (max-width:950px){
-    div {
-      width: 80%;
-    }
-  }
-  @media (max-width:950px){
-    div {
-      width: 90%;
-    }
-  }
-  @media (max-width:750px){
-    div {
-      width: 80%;
-      
-      h1 {
-        font-size: 60px;
-      }
+	@media (max-width: 1100px) {
+		div {
+			width: 70%;
+		}
+	}
+	@media (max-width: 950px) {
+		div {
+			width: 80%;
+		}
+	}
+	@media (max-width: 950px) {
+		div {
+			width: 90%;
+		}
+	}
+	@media (max-width: 750px) {
+		div {
+			width: 80%;
 
-      button {
-        padding: 8px 50px;
-      }
-    }
-  }
-  @media (max-width:650px){
-    div {
-      h1 {
-        font-size: 50px;
-      }
+			h1 {
+				font-size: 60px;
+			}
 
-      h2 {
-        z-index: 10;
-        line-height: 0px;
-      }
+			button {
+				padding: 8px 50px;
+			}
+		}
+	}
+	@media (max-width: 650px) {
+		div {
+			h1 {
+				font-size: 50px;
+			}
 
-      button {
-        padding: 5px 30px;
-      }
-    }
-  }
-  @media (max-width:550px){
-    padding-right: 30px;
-    div {
-      h1 {
-        font-size: 50px;
-      }
+			h2 {
+				z-index: 10;
+				line-height: 0px;
+			}
 
-      button {
-        padding: 5px 30px;
-        font-size: 15px;
-      }
-    }
-  }
-  @media (max-width:450px){
-    padding-top:50px;
-    div {
-      h1 {
-        margin-bottom:45px;
-      }
-    }
-  }
-  @media (max-width:450px){
-    div {
-      button {
-        font-size:12px;
-      }
-    }
-  }
-  
+			button {
+				padding: 5px 30px;
+			}
+		}
+	}
+	@media (max-width: 550px) {
+		padding-right: 30px;
+		div {
+			h1 {
+				font-size: 50px;
+			}
+
+			button {
+				padding: 5px 30px;
+				font-size: 15px;
+			}
+		}
+	}
+	@media (max-width: 450px) {
+		padding-top: 50px;
+		div {
+			h1 {
+				margin-bottom: 45px;
+			}
+		}
+	}
+	@media (max-width: 450px) {
+		div {
+			button {
+				font-size: 12px;
+			}
+		}
+	}
 `;
 
 export const Right = styled.div`
@@ -131,39 +134,38 @@ export const Right = styled.div`
 		font-size: 80px;
 	}
 
-  @media (max-width:1000px){
-    padding-left: 50px;
-    h1 {
-      font-size: 60px;
-    }
-  }
-  @media (max-width:750px){
-    padding-left: 30px;
-    h1 {
-      font-size: 50px;
-    }
-  }
-  @media (max-width:550px){
-    padding-left:0px;
-  }
-  @media (max-width:530px){
-    h1{
-      margin-left: -20px;
-    }
-  }
-  @media (max-width:450px){
-    h1{
-      margin-left: -60px;
-    }
-  }
-  @media (max-width:450px){
-    padding-top:80px;
-    h1{
-      margin-left: -80px;
-    }
-  }
+	@media (max-width: 1000px) {
+		padding-left: 50px;
+		h1 {
+			font-size: 60px;
+		}
+	}
+	@media (max-width: 750px) {
+		padding-left: 30px;
+		h1 {
+			font-size: 50px;
+		}
+	}
+	@media (max-width: 550px) {
+		padding-left: 0px;
+	}
+	@media (max-width: 530px) {
+		h1 {
+			margin-left: -20px;
+		}
+	}
+	@media (max-width: 450px) {
+		h1 {
+			margin-left: -60px;
+		}
+	}
+	@media (max-width: 450px) {
+		padding-top: 80px;
+		h1 {
+			margin-left: -80px;
+		}
+	}
 `;
-
 
 export const Image = styled.img`
 	position: absolute;
@@ -173,13 +175,13 @@ export const Image = styled.img`
 	width: 350px;
 	z-index: 0;
 
-  @media (max-width:780px){
-    width: 300px;
-  }
-  @media (max-width:630px){
-    width: 250px;
-  }
-  @media (max-width:450px){
-    width: 250px;
-  }
+	@media (max-width: 780px) {
+		width: 300px;
+	}
+	@media (max-width: 630px) {
+		width: 250px;
+	}
+	@media (max-width: 450px) {
+		width: 250px;
+	}
 `;

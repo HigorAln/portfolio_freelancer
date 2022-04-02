@@ -20,6 +20,9 @@ export const ContentCardServices = styled.nav<IContentCardServices>`
 
 	&:hover {
 		transform: scale(1);
+		@media (max-width: 500px) {
+			transform: scale(0.9);
+		}
 	}
 
 	display: flex;

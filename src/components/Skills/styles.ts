@@ -7,4 +7,8 @@ export const ContentSkills = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 30px;
+
+	@media (max-width: 500px) {
+		margin-bottom: 100px;
+	}
 `;
