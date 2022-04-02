@@ -1,25 +1,30 @@
 import { IconType } from 'react-icons/lib';
-import { ContentCardServices } from './styles'
+import { ContentCardServices } from './styles';
 
 interface ICardServices {
-  data: {
-    id: number;
-    title: string;
-    description: string;
-    Icon: IconType;
-    active?: boolean;
-  }
+	data: {
+		id: number;
+		title: string;
+		description: string;
+		Icon: IconType;
+		active?: boolean;
+	};
 }
 
-export function CardServices({data}: ICardServices){
-  return(
-    <ContentCardServices active={data.active}>
+export function CardServices({ data }: ICardServices) {
+	return (
+		<ContentCardServices active={data.active}>
+			<data.Icon />
 
-      <data.Icon />
+			<h1>{data.title}</h1>
 
-      <h1>{data.title}</h1>
+			<p>{data.description}</p>
 
-      <p>{data.description}</p>
-    </ContentCardServices>
-  )
+			{!data.active && (
+				<div className="not_offer">
+					<h1>{"I don't offer at the moment"}</h1>
+				</div>
+			)}
+		</ContentCardServices>
+	);
 }
