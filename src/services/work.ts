@@ -8,7 +8,7 @@ export const WorkVariables = [
 	//   color: "var(--purple)",
 	// },
 	{
-		id: 2,
+		id: 1,
 		title: 'Ladding page',
 		url: '/food.jpg',
 		description:
