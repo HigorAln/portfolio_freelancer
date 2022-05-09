@@ -12,6 +12,7 @@ export const ContentWork = styled.div<IContentWork>`
 	margin-bottom: 100px;
 	height: 100%;
 	position: relative;
+	padding-top: 50px;
 
 	@media (max-width: 500px) {
 		margin-bottom: 30px;
