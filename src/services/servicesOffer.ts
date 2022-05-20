@@ -15,7 +15,7 @@ interface IServeicesOffer {
 export const servicesOfferVariables: IServeicesOffer[] = [
 	{
 		id: 1,
-		title: 'Ladding Page',
+		title: 'landing Page',
 		description:
 			'Creating amazing landing pages for your company, for your business, or for your personal use.',
 		Icon: AiFillLayout,
@@ -41,7 +41,7 @@ export const servicesOfferVariables: IServeicesOffer[] = [
 		id: 4,
 		title: 'Web Development',
 		description:
-			'I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like ReactJS',
+			'I create beautiful interface with simple HTML, CSS, & JavaScript and also frameworks like ReactJS',
 		active: true,
 		Icon: RiComputerLine,
 	},
