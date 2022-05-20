@@ -9,7 +9,7 @@ export const WorkVariables = [
 	// },
 	{
 		id: 1,
-		title: 'Ladding page',
+		title: 'Landing page',
 		url: '/food.jpg',
 		description:
 			'I created this landing page for a food company. It is a simple landing page with a simple design.',

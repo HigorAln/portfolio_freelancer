@@ -22,7 +22,7 @@ export function Header({setIsOpen, isOpen}: IHeader) {
 
 			<div>
 				<a href="#home">Home</a>
-				<a href="#skills">Skils</a>
+				<a href="#skills">Skills</a>
 				<a href="#project">Projects</a>
 				<a href="#contact">Contact</a>
 			</div>
